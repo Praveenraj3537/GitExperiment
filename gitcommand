@@ -1,0 +1,36 @@
+git config --global user.name 'your_name' ==> will add the username
+git config --global user.email 'youremail@email.com' ==> will add the email
+git --init ==> will initalize the folder
+touch filename.ext ==> will create a file
+mkdir folder_name ==> will create a folder
+git add filename.ext ==> will add a file
+git status ==> will give the current status of the files(usually there are in stagging area: means not commited)
+git add . ==> will add all the files
+git commit ==> commits all files but asks for message
+git commit -m 'changed files list' ==> will commit
+
+Above all happens in master branch. To work on brach use below command
+git checkout login ==> login is brach name to the master branch. brach
+
+
+git config submodules.recurse true
+
+
+-------Add submodules(another git repo as submodule)to current repo in github--------------------------
+
+1. git init in current folder
+2. Clone the current repo 
+Ex: git clone https://github.com/Praveenraj3537/GitExperiment.git --recurse-submodules
+3. Go inside cloned folder
+Ex: cd /GitExperiment
+4. add submodule to the current repo
+Ex: git submodule add https://github.com/Praveenraj3537/finalproject.git
+5. Add add the files/folders
+Ex: git add .
+6. Commit to the repo and add message
+Ex: git commit(add message)
+7. Push to repo in github
+Ex: git push (Check in the original link is it updated?)
+
+
+Note: In clone if submodules files are not updating the use: git submodule update --init --recursive
